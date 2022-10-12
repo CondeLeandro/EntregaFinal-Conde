@@ -1,0 +1,14 @@
+.impresora1 {
+    width: 337px;
+    height: 216px;
+
+    @media(min-width: 768px){
+        width: 637px;
+        height: 416px;
+    }
+
+    @media(min-width: 1024px){
+        width: 637px;
+        height: 416px;
+    }
+}

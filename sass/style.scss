@@ -1,0 +1,341 @@
+
+@import "media";
+
+
+.container-fluid {
+    background-color: lightslategray;
+    align-items: center;
+}
+
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    padding: 2%;
+    margin: 0%;
+    font-size: 150%;
+    .logo {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+
+
+.container-fluid {
+    background-color: black;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: none;
+    position: sticky;
+    top: 2px;
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+}
+
+
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+    }
+}
+
+.impresora1 {
+    width: 337px;
+    height: 216px;
+}
+
+
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+footer {
+    padding: 3em;
+    background-color: black;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+header {
+    grid-area: header;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.encabezado {
+    grid-area: encabezado;
+}
+
+.seccion {
+    grid-area: seccion;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.index {
+    background-color: black;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "header"
+        "encabezado"
+        "seccion"
+        "footer";
+}
+
+.foto__producto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.miniaturas:hover {
+    transform: scale(1.1);
+}
+
+.miniaturas {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.soportes:hover {
+    transform: scale(1.1);
+}
+
+.soportes {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.mates:hover {
+    transform: scale(1.1);
+}
+
+.mates {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.llaveros:hover {
+    transform: scale(1.1);
+}
+
+.llaveros {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.miniaturas {
+    grid-area: miniaturas;
+}
+
+.soportes {
+    grid-area: soportes;
+}
+
+.mates {
+    grid-area: mates;
+}
+
+.llaveros {
+    grid-area: llaveros;
+}
+
+.foto__producto {
+    background-color: black;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "miniaturas"
+        "soportes"
+        "mates"
+        "llaveros";
+}
+
+
+.logof {
+    width: 100px;
+    height: 100px;
+}
+
+.pie__de__pagina {
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: black;
+    font-size: 16px;
+    padding: 2%;
+}
+
+@media(min-width: 768px) {
+    .seccion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: black;
+        font-size: 25px;
+        padding: 5%;
+    }
+
+
+    .seccion__historia {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: black;
+        font-size: 25px;
+        padding: 9%;
+    }
+
+    .foto__historia {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: black;
+        padding-bottom: 100px;
+    }
+
+    .foto__producto {
+        background-color: black;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "miniaturas soportes"
+            "mates llaveros";
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+    
+
+    .pie__de__pagina {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: black;
+        font-size: 18px;
+        padding: 2%;
+    }
+
+    @media(min-width: 1024px) {
+        .seccion {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: black;
+            font-size: 25px;
+            padding: 5%;
+        }
+    
+    
+        .seccion__historia {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: black;
+            font-size: 25px;
+            padding: 9%;
+        }
+    
+        .foto__historia {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: black;
+            padding-bottom: 100px;
+        }
+    
+        .foto__producto {
+            background-color: black;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "miniaturas soportes"
+                "mates llaveros";
+        }
+
+        .contacto{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: black;
+        }
+        
+    
+        .pie__de__pagina {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            align-items: center;
+            background-color: black;
+            font-size: 18px;
+            padding: 2%;
+        }
+    }
+
+
+}
