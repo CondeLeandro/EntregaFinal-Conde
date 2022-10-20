@@ -1,6 +1,6 @@
 
 @import "media";
-
+@import "generales";
 
 .container-fluid {
     background-color: lightslategray;
@@ -38,21 +38,24 @@ header {
     align-items: center;
 }
 
-ul li {
+ul{ 
+    li {
     list-style-type: none;
     position: sticky;
     top: 2px;
     background-color: black;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    a {
+        a {
         text-decoration: none;
         color: white;
         background-color: black;
     }
 }
-
-
+}
+legend{
+    color: white;
+}
 
 .encabezado {
     display: flex;
@@ -65,12 +68,11 @@ ul li {
     h1 {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: white;
+        .impresora1 {
+            width: 337px;
+            height: 216px;
+        }
     }
-}
-
-.impresora1 {
-    width: 337px;
-    height: 216px;
 }
 
 
@@ -225,6 +227,11 @@ footer {
         padding: 5%;
     }
 
+    .impresora1 {
+        width: 337px;
+        height: 216px;
+        margin-left: 30%;
+    }
 
     .seccion__historia {
         display: flex;
@@ -243,6 +250,8 @@ footer {
         justify-content: space-evenly;
         background-color: black;
         padding-bottom: 100px;
+        width: 30%;
+        height: 30%;
     }
 
     .foto__producto {
@@ -285,6 +294,12 @@ footer {
             font-size: 25px;
             padding: 5%;
         }
+
+        .impresora1{
+            width: 637px;
+            height: 416px;
+            margin-left: 30%;
+        }
     
     
         .seccion__historia {
@@ -304,6 +319,8 @@ footer {
             justify-content: space-evenly;
             background-color: black;
             padding-bottom: 100px;
+            width: 100%;
+            height: 100%;
         }
     
         .foto__producto {
