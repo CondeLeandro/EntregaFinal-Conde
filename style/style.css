@@ -110,6 +110,10 @@ p {
   text-align: center;
 }
 
+.pregunta {
+  font-size: x-large;
+}
+
 footer {
   padding: 3em;
   background-color: black;
@@ -258,8 +262,7 @@ footer {
     padding: 9%;
   }
   .foto__historia {
-    display: flex;
-    flex-direction: row;
+    display: list-item;
     align-items: center;
     justify-content: space-evenly;
     background-color: black;
